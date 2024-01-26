@@ -1,0 +1,52 @@
+.edicion
+    margin-top: 35px
+    background: #ffffffab
+    border-radius: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 250px
+    max-height: 400px
+    form
+        label
+            font-family: $openSans
+            font-size: 20px
+            margin-right: 0px
+
+        input[type='text']
+            font-family: $sono
+            font-weight: 600
+            font-size: 25px
+            text-align: center
+            border-radius: 20px
+            &:focus
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.9)
+                transition: all 0.2s ease
+        input[id='placa']
+            width: 20%
+            margin-right: 30px
+            margin-left: 5px
+        input[id='propietario']
+            width: 50%
+            margin-left: 5px
+        .inputRadio
+            margin-top: 20px
+            label
+                margin-right: 5px
+            label[class='labelAutomovil']
+                margin-left: 30px
+        input[type='submit']
+            margin-top: 10px
+            font-family: $openSans
+            font-size: 20px
+            padding: 5px 30px
+            border-radius: 15px
+            background-color: #0566ce
+            color: white
+            font-weight: 700
+            text-decoration: none
+            &:hover
+                background-color: #0352a7
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+                transform: scale(1.02)
+                transition: all 0.2s ease

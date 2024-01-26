@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #e2e2e2; }
+
+/* Google Fonts */
+.logoTitulo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 55px; }
+  .logoTitulo-header .logo {
+    display: inline-block; }
+    .logoTitulo-header .logo img {
+      margin-left: 10px;
+      margin-bottom: 9px;
+      border-radius: 20px; }
+      .logoTitulo-header .logo img:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease; }
+  .logoTitulo-header h1 {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    display: inline-block; }
+
+.cerrarAlerta {
+  display: flex;
+  justify-content: right; }
+  .cerrarAlerta button {
+    width: 70px;
+    height: 40px;
+    margin-top: -5px;
+    margin-bottom: -30px;
+    /* padding: 5px 30px */
+    border-radius: 15px;
+    background-color: #0566ce;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; }
+    .cerrarAlerta button:hover {
+      background-color: #0352a7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      transform: scale(1.02);
+      transition: all 0.2s ease; }
+
+.alertaExito, .alertaError {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+  margin-bottom: -20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 20px; }
+
+.alertaExito {
+  background: #28a745; }
+
+form {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 8%; }
+  form label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px; }
+    form label:hover {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  form .inputText div {
+    font-family: "Sono", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  form .inputText input {
+    border: 2px solid #4b9ece; }
+  form .inputText .placa {
+    font-weight: 800;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px; }
+    form .inputText .placa:focus {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+      transition: all 0.2s ease; }
+  form .inputText .nombrePropietario {
+    font-size: 30px;
+    font-weight: 600;
+    width: 95%;
+    text-align: center;
+    border-radius: 15px; }
+    form .inputText .nombrePropietario:focus {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      transition: all 0.2s ease; }
+  form .inputText label {
+    margin-left: 20px; }
+  form .tipoDeVehiculo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; }
+  form .submit {
+    display: flex;
+    justify-content: center; }
+    form .submit input {
+      font-family: "Sono", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      padding: 5px 30px;
+      border-radius: 15px;
+      color: white;
+      background-color: #007bff; }
+      form .submit input:hover {
+        background-color: #0566ce;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        transform: scale(1.02);
+        transition: all 0.2s ease; }
+
+.logoParqueadero {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%; }
+
+.botonesEjecucion {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Sono", sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .botonesEjecucion button, .botonesEjecucion .link {
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: #0566ce;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; }
+    .botonesEjecucion button:hover, .botonesEjecucion .link:hover {
+      background-color: #0352a7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      transform: scale(1.02);
+      transition: all 0.2s ease; }
+  .botonesEjecucion .eliminar {
+    margin-left: 10px; }
+  .botonesEjecucion .link {
+    display: flex;
+    margin-top: 30px; }
+
+@media screen and (max-width: 768px) {
+  .logoParqueadero {
+    display: none; }
+  .botonesEjecucion {
+    margin-top: -35px; }
+    .botonesEjecucion .link {
+      margin-top: 5px; } }
+
+.logoTitulo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logoTitulo-footer .logo {
+    display: inline-block; }
+    .logoTitulo-footer .logo img {
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 15px; }
+      .logoTitulo-footer .logo img:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease; }
+  .logoTitulo-footer h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    display: inline-block; }
+
+.vehiculosRegistrados {
+  min-height: 500px; }
+
+.navigation {
+  display: flex;
+  align-items: center; }
+  .navigation button, .navigation .btnBack {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: #0566ce;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; }
+    .navigation button:hover, .navigation .btnBack:hover {
+      background-color: #0352a7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      transform: scale(1.02);
+      transition: all 0.2s ease; }
+  .navigation .search {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px; }
+    .navigation .search p {
+      margin-top: 2%; }
+    .navigation .search input {
+      font-family: "Sono", sans-serif;
+      font-weight: 800;
+      font-size: 25px;
+      width: 35%;
+      text-align: center;
+      border-radius: 20px; }
+      .navigation .search input:focus {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+        transition: all 0.2s ease; }
+  .navigation .filter {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right; }
+    .navigation .filter p {
+      margin-top: 2%; }
+    .navigation .filter button {
+      margin-left: 2%; }
+
+.list h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px; }
+
+.list .alertaExito, .list .alertaError {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 20px; }
+
+.list .alertaExito {
+  background: #28a745; }
+
+.list .listadoVehiculos {
+  margin-bottom: 50px; }
+
+.tabla {
+  margin-top: 3%;
+  background: white;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500; }
+  .tabla table {
+    border-collapse: collapse;
+    width: 100%; }
+    .tabla table td button {
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      padding: 5px;
+      border-radius: 15px;
+      color: white;
+      font-weight: 700;
+      text-decoration: none; }
+      .tabla table td button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        transform: scale(1.02);
+        transition: all 0.2s ease; }
+    .tabla table td .editar {
+      background: #0566ce; }
+      .tabla table td .editar:hover {
+        background-color: #0352a7; }
+    .tabla table td .eliminar {
+      background: #FB3640; }
+      .tabla table td .eliminar:hover {
+        background: #fb3640e3; }
+  .tabla th, .tabla td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center; }
+
+.cerrarEdicion {
+  display: flex;
+  justify-content: right; }
+  .cerrarEdicion button {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: #FB3640;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; }
+    .cerrarEdicion button:hover {
+      background-color: #ca272f;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      transform: scale(1.02);
+      transition: all 0.2s ease; }
+
+.cerrarAlerta {
+  margin-top: -10px; }
+
+.edicion {
+  margin-top: 35px;
+  background: #ffffffab;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  max-height: 400px; }
+  .edicion form label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin-right: 0px; }
+  .edicion form input[type='text'] {
+    font-family: "Sono", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 20px; }
+    .edicion form input[type='text']:focus {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+      transition: all 0.2s ease; }
+  .edicion form input[id='placa'] {
+    width: 20%;
+    margin-right: 30px;
+    margin-left: 5px; }
+  .edicion form input[id='propietario'] {
+    width: 50%;
+    margin-left: 5px; }
+  .edicion form .inputRadio {
+    margin-top: 20px; }
+    .edicion form .inputRadio label {
+      margin-right: 5px; }
+    .edicion form .inputRadio label[class='labelAutomovil'] {
+      margin-left: 30px; }
+  .edicion form input[type='submit'] {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: #0566ce;
+    color: white;
+    font-weight: 700;
+    text-decoration: none; }
+    .edicion form input[type='submit']:hover {
+      background-color: #0352a7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      transform: scale(1.02);
+      transition: all 0.2s ease; }

@@ -1,0 +1,71 @@
+.vehiculosRegistrados
+    min-height: 500px
+.navigation
+    display: flex
+    align-items: center
+    button, .btnBack
+        font-family: $openSans
+        font-size: 20px
+        padding: 5px 30px
+        border-radius: 15px
+        background-color: #0566ce
+        color: white
+        font-weight: 700
+        text-decoration: none
+        &:hover
+            background-color: #0352a7
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+            transform: scale(1.02)
+            transition: all 0.2s ease
+    .search
+        font-family: $openSans
+        font-size: 30px
+        font-weight: 700
+        align-items: center
+        display: flex
+        flex-direction: row
+        justify-content: center
+        gap: 15px
+        p
+            margin-top: 2%
+        input
+            font-family: $sono
+            font-weight: 800
+            font-size: 25px
+            width: 35%
+            text-align: center
+            border-radius: 20px
+            &:focus
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.9)
+                transition: all 0.2s ease
+    .filter
+        font-family: $openSans
+        font-size: 30px
+        font-weight: 700
+        align-items: center
+        display: flex
+        flex-direction: row
+        justify-content: right
+        p
+            margin-top: 2%
+        button
+            margin-left: 2%
+
+.list
+    h2
+        font-family: $openSans
+        font-weight: 700
+        text-align: center
+        margin-top: 20px
+    .alertaExito, .alertaError
+        font-family: $openSans
+        margin-bottom: 10px
+        text-align: center
+        font-size: 25px
+        font-weight: 700
+        border-radius: 20px
+    .alertaExito
+        background: #28a745
+
+    .listadoVehiculos
+        margin-bottom: 50px

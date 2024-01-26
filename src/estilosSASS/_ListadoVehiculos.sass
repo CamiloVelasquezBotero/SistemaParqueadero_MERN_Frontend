@@ -1,0 +1,58 @@
+.tabla 
+    margin-top: 3%
+    background: white
+    border-radius: 20px
+    font-family: $openSans
+    font-weight: 500
+
+    table 
+        border-collapse: collapse
+        width: 100%
+        td
+            button
+                font-family: $openSans
+                font-size: 15px
+                padding: 5px
+                border-radius: 15px
+                color: white
+                font-weight: 700
+                text-decoration: none
+                &:hover
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+                    transform: scale(1.02)
+                    transition: all 0.2s ease
+            .editar
+                background: #0566ce
+                &:hover
+                    background-color: #0352a7
+            .eliminar
+                background: #FB3640
+                &:hover
+                    background: #fb3640e3
+                    
+    th, td 
+        border: 1px solid #ccc
+        padding: 8px
+        text-align: center
+
+.cerrarEdicion
+    display: flex
+    justify-content: right
+    button
+        margin-top: 10px
+        font-family: $openSans
+        font-size: 20px
+        padding: 5px 30px
+        border-radius: 15px
+        background-color: #FB3640
+        color: white
+        font-weight: 700
+        text-decoration: none
+        &:hover
+            background-color: #ca272f
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+            transform: scale(1.02)
+            transition: all 0.2s ease
+
+.cerrarAlerta
+    margin-top: -10px

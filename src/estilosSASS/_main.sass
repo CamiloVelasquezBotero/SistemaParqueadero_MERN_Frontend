@@ -1,0 +1,130 @@
+.cerrarAlerta
+    display: flex
+    justify-content: right
+    button
+        width: 70px
+        height: 40px
+        margin-top: -5px
+        margin-bottom: -30px
+        /* padding: 5px 30px */
+        border-radius: 15px
+        background-color: #0566ce
+        color: white
+        font-weight: 700
+        text-decoration: none
+        &:hover
+            background-color: #0352a7
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+            transform: scale(1.02)
+            transition: all 0.2s ease
+    
+.alertaExito, .alertaError
+    font-family: $openSans
+    margin-top: 5px
+    margin-bottom: -20px
+    text-align: center
+    font-size: 25px
+    font-weight: 700
+    border-radius: 20px
+.alertaExito
+    background: #28a745
+form
+    text-align: center
+    margin-top: 5%
+    margin-bottom: 8%
+    label
+        font-family: $openSans
+        font-size: 30px
+        font-weight: 800
+        margin-bottom: 15px
+        &:hover
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+    .inputText
+        div
+            font-family: $sono
+            display: flex
+            flex-direction: column
+            align-items: center
+        input
+            border: 2px solid #4b9ece
+        .placa
+            font-weight: 800
+            font-size: 60px
+            width: 50%
+            text-align: center
+            border-radius: 20px
+            &:focus
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.9)
+                transition: all 0.2s ease
+        .nombrePropietario
+            font-size: 30px
+            font-weight: 600
+            width: 95%
+            text-align: center
+            border-radius: 15px
+            &:focus
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+                transition: all 0.2s ease
+        label
+            margin-left: 20px
+    .tipoDeVehiculo
+        display: flex
+        justify-content: center
+        gap: 30px
+        flex-wrap: wrap
+    .submit
+        display: flex
+        justify-content: center
+        input
+            font-family: $sono
+            font-size: 25px
+            font-weight: 700
+            padding: 5px 30px
+            border-radius: 15px
+            color: white
+            background-color: #007bff
+            &:hover
+                background-color: #0566ce
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+                transform: scale(1.02)
+                transition: all 0.2s ease
+
+.logoParqueadero
+    display: flex
+    justify-content: center
+    margin-top: 10%
+                
+.botonesEjecucion
+    margin-top: 5%
+    text-align: center
+    font-family: $sono
+    font-size: 25px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    button, .link
+        padding: 5px 30px
+        border-radius: 15px
+        background-color: #0566ce
+        color: white
+        font-weight: 700
+        text-decoration: none
+        &:hover
+            background-color: #0352a7
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9)
+            transform: scale(1.02)
+            transition: all 0.2s ease
+    .eliminar
+        margin-left: 10px
+    .link
+        display: flex
+        margin-top: 30px
+
+@media screen and ( max-width: 768px )
+    .logoParqueadero
+        display: none
+    .botonesEjecucion
+        margin-top: -35px
+        .link
+            margin-top: 5px
+    
