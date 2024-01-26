@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import useVehiculos from '../hooks/useVehiculos';
-import ListadoVehiculos from '../components/ListadoVehiculos';
+import useVehiculos from '../hooks/useVehiculos.jsx';
+import ListadoVehiculos from '../components/ListadoVehiculos.jsx';
 import Alerta from '../components/Alerta.jsx'
-import DivEdicion from '../components/DivEdicion';
+import DivEdicion from '../components/DivEdicion.jsx';
 
 const VehiculosRegistrados = () => {
     const [alerta, setAlerta] = useState({});
@@ -15,7 +15,7 @@ const VehiculosRegistrados = () => {
     const { 
         getVehiculos,
         vehiculos, setVehiculos,
-        vehiculosTable ,setVehiculosTable,
+        /* vehiculosTable */setVehiculosTable,
         vehiculoEditar, setVehiculoEditar,
         getVehiculo,
         mostrarEdicionContext, setMostrarEdicionContext,
